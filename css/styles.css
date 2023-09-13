@@ -65,8 +65,9 @@ body {
 }
 .hero-image {
     background-color: var(--theme-color);
-    background-blend-mode: overlay;
-    background-image: url("../images/people-office-1.jpg");
+    /*background-blend-mode: overlay;*/
+    background: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)),
+     url("../images/people-office-1.jpg");
     color: var(--secondary-color);
 }
 .hero-top-banner{
@@ -142,11 +143,23 @@ body {
     cursor: pointer;
     padding: 12px 24px;
 }
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.project-link:hover, 
+.project-link:focus
+   { 
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .proj-cardlist {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: inherit;
+}
+.project-link{
+    display: block;
 }
 .card-text{
     margin-top: 8px;
@@ -193,7 +206,7 @@ body {
 .client-list:hover,
 .client-list:focus  {
     border-color: var(--sixth-color);
-    fill: var(--sixth-color);
+    color: var(--sixth-color);
 }
 .centered-list {
     margin: 0 auto;
@@ -310,12 +323,11 @@ body {
     justify-content: left;
     gap: 120px;
 }
-.footer-box {
+/*.footer-box {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 16px;*/
 }
-/* social media link icon etc. */
 .feat-icon {
     margin-bottom: 8px;
     width: 264px;
@@ -326,7 +338,15 @@ body {
     display: flex;
     background-color: var(--fouth-color);
 }
+.footer-title{
+    font-weight: 500;
+}
 .socmed-list{
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+.socmed-footer{
     display: flex;
     gap: 16px;
 }
@@ -344,9 +364,7 @@ body {
     background-color: var(--third-color);
 }
 .icon {
-    display: inline-block;
-    stroke-width: 0;
-    stroke: currentColor;
+    fill: currentColor;
 }
 .icon-client {
     width: 104px;
@@ -358,7 +376,7 @@ body {
     height: 88px;
     align-items: center;
     justify-content: center;
-    fill: var(--eight-color);
+    color: var(--eight-color);
     border-radius: 4px;
     border: 1px solid var(--eight-color);
 }
