@@ -341,10 +341,14 @@ body {
 .footer-title{
     font-weight: 500;
 }
-.socmed-list{
+.socmed-list {
     display: flex;
     gap: 16px;
     margin-top: 8px;
+
+}
+.icon{
+    fill: currentColor;
 }
 .socmed-footer{
     display: flex;
@@ -380,3 +384,10 @@ body {
     border-radius: 4px;
     border: 1px solid var(--eight-color);
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
