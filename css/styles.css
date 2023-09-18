@@ -7,9 +7,8 @@
     --sixth-color:#404BBF;
     --seventh-color:#434455;
     --theme-color: #2E2F42;
-    --hero-cover: rgba(46, 47, 66, 0.70);
-    --eight-color: #8E8F99;
 }
+
 h1,h2,h3,h4,h5,h6,p { margin: 0;}
 html { box-sizing: border-box;}
 *,*::after,*::before { box-sizing: inherit;}
@@ -65,9 +64,6 @@ body {
 }
 .hero-image {
     background-color: var(--theme-color);
-    /*background-blend-mode: overlay;*/
-    background: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)),
-     url("../images/people-office-1.jpg");
     color: var(--secondary-color);
 }
 .hero-top-banner{
@@ -76,6 +72,7 @@ body {
     line-height: 60px;
     letter-spacing: 1.12px;
     text-align: center;
+
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +96,6 @@ body {
     letter-spacing: 0.4px;
 }
 .feat-desc {
-    margin-top: 8px;
     color:var(--seventh-color);
     line-height: 24px;
 }
@@ -140,26 +136,7 @@ body {
     background-color: var(--fouth-color);
     border: 1px solid var(--fifth-color);
 
-    cursor: pointer;
     padding: 12px 24px;
-}
-.link{
-    text-decoration: none;
-    color: inherit;
-}
-.project-link:hover, 
-.project-link:focus
-   { 
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-.proj-cardlist {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-}
-.project-link{
-    display: block;
 }
 .card-text{
     margin-top: 8px;
@@ -195,18 +172,6 @@ body {
 .filters .filter-btn.active {
     color: var(--secondary-color);
     background-color: var(--third-color);
-}
-.socmed-icon:hover,
-.socmed-icon:focus {
-    background-color: var(--sixth-color);
-}
-.socmed-icon:active {
-    background-color: var(--third-color);
-}
-.client-list:hover,
-.client-list:focus  {
-    border-color: var(--sixth-color);
-    color: var(--sixth-color);
 }
 .centered-list {
     margin: 0 auto;
@@ -318,76 +283,56 @@ body {
 .footer-text {
     margin-top: 18px;
 }
-.container-footer {
+
+.social-teamlist{
     display: flex;
-    justify-content: left;
-    gap: 120px;
-}
-/*.footer-box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;*/
-}
-.feat-icon {
-    margin-bottom: 8px;
-    width: 264px;
-    height: 112px;
-    align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    display: flex;
-    background-color: var(--fouth-color);
+    gap: 10px;
 }
-.footer-title{
-    font-weight: 500;
+.social-item{
+    width: 44px;
+    height: 44px; 
 }
-.socmed-list {
-    display: flex;
-    gap: 16px;
-    margin-top: 8px;
+.social-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-flex;
+padding-bottom: 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;  
+}
+.social-icon{
+    fill: currentColor;
+}
+.social-link:hover, .social-link:focus{
+    background-color: var(--sixth-color);;
 
 }
+.partner-list{
+    display:flex;
+    gap: 30px;
+    
+}
+.link{
+    color: grey;
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .icon{
+    width: 100px;
+    height: 60px;
     fill: currentColor;
 }
-.socmed-footer{
-    display: flex;
-    gap: 16px;
+.item{
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 }
-.icon-socmed {
-    height: 16px;
-    width: 16px;
-}
-.socmed-icon{
-    display: flex;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--third-color);
-}
-.icon {
-    fill: currentColor;
-}
-.icon-client {
-    width: 104px;
-    height: 56px;
-}
-.client-list {
-    display: flex;
-    width: 168px;
-    height: 88px;
-    align-items: center;
-    justify-content: center;
-    color: var(--eight-color);
-    border-radius: 4px;
-    border: 1px solid var(--eight-color);
-}
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
